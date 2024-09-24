@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel y Tijeras</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            place-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .content {
+            display: grid;
+            place-items: center;
+            text-align: center;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            text-align: center;
+        }
+        #div1 { grid-area: 1 / 1 / 2 / 3; }
+        #div2 { grid-area: 2 / 1 / 3 / 2; }
+        #div3 { grid-area: 2 / 2 / 3 / 3; }
+        #div4 { grid-area: 3 / 1 / 4 / 3; }
+        img {
+            height: 100px; 
+        }
+        button{
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Piedra 🪨 Papel 🧻 o Tijeras ✂️</h1>
+        <div class="parent">
+            <button id="div1">Jugar</button>
+            <div id="div2">
+                <p id="userText">Usuario</p>
+                <img id="img1" src="">
+            </div>
+            <div id="div3">
+                <p id="computerText">Computadora</p>
+                <img id="img2" src="" >
+            </div>
+            <div id="div4">Resultado</div>
+        </div>
+    </div>
+    <script src="./scissors.js"></script>
+</body>
+</html>
